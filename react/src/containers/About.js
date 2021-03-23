@@ -147,7 +147,7 @@ const About = () => {
             </section>
             <section className='about__team'>
                 <div className='row'>
-                    <h2 className='about__subheading'>Meet out awesome team!</h2>
+                    <h2 className='about__subheading'>Meet our awesome team!</h2>
                 </div>
                 {getAllRealtors()}
             </section>

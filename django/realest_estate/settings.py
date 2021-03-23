@@ -80,12 +80,15 @@ WSGI_APPLICATION = 'realest_estate.wsgi.application'
 # a local_settings.py file on the server
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'realest_estate',
-        'USER': 'postgres',
-        'PASSWORD': '[YOUR POSTGRES DATABASE PASSWORD]',
-        'HOST': 'localhost'
+    #'default': {
+     #   'ENGINE': 'django.db.backends.postgresql',
+      #  'NAME': 'realest_estate',
+       # 'USER': 'postgres',
+        #'PASSWORD': '[YOUR POSTGRES DATABASE PASSWORD]',
+        #'HOST': 'localhost'
+     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(os.path.join(BASE_DIR, "db.sqlite3")),
     }
 }
 
